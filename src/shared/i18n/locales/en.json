@@ -1,0 +1,31 @@
+{
+    "translation": {
+        "layout": {
+            "topbar": {
+                "languages": {
+                    "english": "English",
+                    "portuguese": "Portuguese"
+                }
+            },
+            "menu": {
+                "home": {
+                    "label": "Home"
+                },
+                "user_management": {
+                    "label": "User Management"
+                }
+            }
+        },
+        "pages": {
+            "home": {
+                "title": "Home",
+                "description": "Welcome to my APP"
+            },
+            "user_management": {
+                "actions": {
+                    "add": "Insert"
+                }
+            }
+        }
+    }
+}
