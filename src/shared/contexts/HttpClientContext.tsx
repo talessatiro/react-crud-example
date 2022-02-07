@@ -14,7 +14,7 @@ export const HttpClientContextProvider = ({
 }: HttpClientContextProviderProps) => {
     const httpClient = useMemo<AxiosInstance>(() => {
         const axiosClient = axios.create({
-            baseURL: 'http://localhost:3333',
+            baseURL: '/api',
             headers: {
                 'Content-Type': 'application/json',
             },
