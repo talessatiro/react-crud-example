@@ -11,7 +11,7 @@
                 "home": {
                     "label": "Início"
                 },
-                "user_management": {
+                "userManagement": {
                     "label": "Gestão de Usuários"
                 }
             }
@@ -21,11 +21,37 @@
                 "title": "Início",
                 "description": "Bem vindo a minha aplicação"
             },
-            "user_management": {
+            "userManagement": {
+                "title": "Gestão de Usuários",
                 "actions": {
                     "add": "Adicionar"
+                },
+                "list": {
+                    "columns": {
+                        "id": "ID",
+                        "name": "Nome",
+                        "age": "Idade",
+                        "email": "Email",
+                        "actions": "Ações"
+                    }
+                },
+                "createUser": {
+                    "title": "Criar Usuário"
+                },
+                "editUser": {
+                    "title": "Editar Usuário"
+                },
+                "form": {
+                    "fields": {
+                        "name": "Nome",
+                        "age": "Idade",
+                        "email": "Email"
+                    }
                 }
             }
+        },
+        "general": {
+            "loading": "CARREGANDO..."
         }
     }
 }

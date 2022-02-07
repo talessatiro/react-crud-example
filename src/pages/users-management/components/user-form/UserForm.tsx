@@ -9,6 +9,7 @@ import {
     useFormik,
 } from 'formik';
 import './user-form.scss';
+import { useTranslation } from 'react-i18next';
 
 export type UserFormProps = {
     initialValues: any;
@@ -24,6 +25,7 @@ export const UserForm = ({
     onSubmit,
     isEdit,
 }: UserFormProps) => {
+    const { t } = useTranslation();
     const formSchema = Yup.object({
         name: Yup.string().required(),
         age: Yup.number().min(18).max(100).required(),
@@ -44,7 +46,7 @@ export const UserForm = ({
                     fullWidth
                     id="name"
                     name="name"
-                    label="Name"
+                    label={t('pages.userManagement.form.fields.name')}
                     value={formik.values?.name}
                     onChange={formik.handleChange}
                     error={formik.touched?.name && !!formik.errors?.name}
@@ -55,7 +57,7 @@ export const UserForm = ({
                     fullWidth
                     id="age"
                     name="age"
-                    label="Age"
+                    label={t('pages.userManagement.form.fields.age')}
                     value={formik.values?.age}
                     onChange={formik.handleChange}
                     error={formik.touched?.age && !!formik.errors?.age}
@@ -66,7 +68,7 @@ export const UserForm = ({
                     fullWidth
                     id="email"
                     name="email"
-                    label="Email"
+                    label={t('pages.userManagement.form.fields.email')}
                     value={formik.values?.email}
                     onChange={formik.handleChange}
                     error={formik.touched?.email && !!formik.errors?.email}
@@ -82,29 +84,5 @@ export const UserForm = ({
                 </Button>
             </form>
         </Box>
-        // <Formik
-        //     validationSchema={formSchema}
-        //     initialValues={initialValues}
-        //     onSubmit={onSubmit}
-        // >
-        //     <Form className="user-form">
-        //         <label htmlFor="name">Name</label>
-        //         <Field id="name" name="name" type="text" />
-        //         <ErrorMessage className="error" name="name" component="div" />
-        //         <label htmlFor="age">Age</label>
-        //         <Field id="age" name="age" type="number" />
-        //         <ErrorMessage className="error" name="age" component="div" />
-        //         <label htmlFor="email">Email</label>
-        //         <Field id="email" name="email" type="text" />
-        //         <ErrorMessage className="error" name="email" component="div" />
-        // <Button
-        //     className="submit-button"
-        //     type="submit"
-        //     variant="contained"
-        // >
-        //     {isEdit ? 'Editar' : 'Criar'}
-        // </Button>
-        //     </Form>
-        // </Formik>
     );
 };

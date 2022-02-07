@@ -23,7 +23,7 @@ export const Sidebar = () => {
             id: 'user-mangement',
             icon: 'management',
             to: '/users',
-            label: 'layout.menu.user_management.label',
+            label: 'layout.menu.userManagement.label',
         },
     ];
 

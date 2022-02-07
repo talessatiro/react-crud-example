@@ -24,29 +24,29 @@ export const UserList = () => {
     const columns: GridColDef[] = [
         {
             field: 'id',
-            headerName: 'ID',
+            headerName: t('pages.userManagement.list.columns.id'),
             disableColumnMenu: true,
         },
         {
             field: 'name',
-            headerName: 'Name',
+            headerName: t('pages.userManagement.list.columns.name'),
             width: 150,
             disableColumnMenu: true,
         },
         {
             field: 'age',
-            headerName: 'Age',
+            headerName: t('pages.userManagement.list.columns.age'),
             disableColumnMenu: true,
         },
         {
             field: 'email',
-            headerName: 'Email',
+            headerName: t('pages.userManagement.list.columns.email'),
             width: 250,
             disableColumnMenu: true,
         },
         {
             field: 'actions',
-            headerName: 'Actions',
+            headerName: t('pages.userManagement.list.columns.actions'),
             sortable: false,
             disableColumnMenu: true,
             renderCell: (params) => {
@@ -103,7 +103,7 @@ export const UserList = () => {
                     variant="contained"
                     startIcon={<AddIcon />}
                 >
-                    {t('pages.user_management.actions.add')}
+                    {t('pages.userManagement.actions.add')}
                 </Button>
             </Box>
             <Box className="user-list-container">

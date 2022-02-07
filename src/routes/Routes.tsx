@@ -1,7 +1,10 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Home, UserManagement } from '../pages';
-import { UserCreate, UserEdit } from '../pages/users-management/components';
-import { UserList } from '../pages/users-management/components/user-list/UserList';
+import {
+    UserList,
+    UserCreate,
+    UserEdit,
+} from '../pages/users-management/components';
 
 export const RoutesApp = () => {
     return (

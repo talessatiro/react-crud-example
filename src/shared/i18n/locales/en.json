@@ -11,7 +11,7 @@
                 "home": {
                     "label": "Home"
                 },
-                "user_management": {
+                "userManagement": {
                     "label": "User Management"
                 }
             }
@@ -21,11 +21,37 @@
                 "title": "Home",
                 "description": "Welcome to my APP"
             },
-            "user_management": {
+            "userManagement": {
+                "title": "User Management",
                 "actions": {
                     "add": "Insert"
+                },
+                "list": {
+                    "columns": {
+                        "id": "ID",
+                        "name": "Name",
+                        "age": "Age",
+                        "email": "Email",
+                        "actions": "Actions"
+                    }
+                },
+                "createUser": {
+                    "title": "Create User"
+                },
+                "editUser": {
+                    "title": "Edit User"
+                },
+                "form": {
+                    "fields": {
+                        "name": "Name",
+                        "age": "Age",
+                        "email": "Email"
+                    }
                 }
             }
+        },
+        "general": {
+            "loading": "LOADING..."
         }
     }
 }
