@@ -1,22 +1,16 @@
 import * as Yup from 'yup';
 import { Box, Button, TextField } from '@mui/material';
-import {
-    ErrorMessage,
-    Field,
-    Form,
-    Formik,
-    FormikHelpers,
-    useFormik,
-} from 'formik';
+import { FormikHelpers, useFormik } from 'formik';
 import './user-form.scss';
 import { useTranslation } from 'react-i18next';
+import { User } from '../../../../api';
 
 export type UserFormProps = {
-    initialValues: any;
+    initialValues: User;
     onSubmit: (
-        values: any,
-        formikHelpers: FormikHelpers<any>,
-    ) => void | Promise<any>;
+        values: User,
+        formikHelpers: FormikHelpers<User>,
+    ) => void | Promise<User | void>;
     isEdit?: boolean;
 };
 

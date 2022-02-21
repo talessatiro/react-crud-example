@@ -26,29 +26,32 @@ export const UserList = () => {
             field: 'id',
             headerName: t('pages.userManagement.list.columns.id'),
             disableColumnMenu: true,
+            flex: 0.2,
         },
         {
             field: 'name',
             headerName: t('pages.userManagement.list.columns.name'),
-            width: 150,
             disableColumnMenu: true,
+            flex: 1,
         },
         {
             field: 'age',
             headerName: t('pages.userManagement.list.columns.age'),
             disableColumnMenu: true,
+            flex: 0.2,
         },
         {
             field: 'email',
             headerName: t('pages.userManagement.list.columns.email'),
-            width: 250,
             disableColumnMenu: true,
+            flex: 1,
         },
         {
             field: 'actions',
             headerName: t('pages.userManagement.list.columns.actions'),
             sortable: false,
             disableColumnMenu: true,
+            flex: 0.2,
             renderCell: (params) => {
                 const { id }: User = params.row;
 

@@ -1,4 +1,6 @@
 node_modules
+coverage
+.swc
 .DS_Store
 dist
 dist-ssr

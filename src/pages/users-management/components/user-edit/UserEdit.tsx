@@ -35,7 +35,7 @@ export const UserEdit = () => {
             </Box>
             <Box className="edit-user-container">
                 <UserForm
-                    initialValues={data}
+                    initialValues={data as User}
                     onSubmit={handleSubmit}
                     isEdit={true}
                 />

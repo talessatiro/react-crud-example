@@ -20,7 +20,7 @@ export const UserCreate = () => {
         navigate('/users');
     };
 
-    const handleSubmit = async (user: User) => {
+    const handleSubmit = async (user: User): Promise<void> => {
         createUser(user, {
             onSuccess: () => goToUserList(),
         });
